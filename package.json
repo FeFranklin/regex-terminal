@@ -1,0 +1,41 @@
+{
+  "name": "regex-terminal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "npx mocha -w --parallel test/*.test.js",
+    "test:cov": "npx nyc npx mocha -r reify --parallel test/*.test.js",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeFranklin/regex-terminal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FeFranklin/regex-terminal/issues"
+  },
+  "homepage": "https://github.com/FeFranklin/regex-terminal#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.8.6"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "safe-regex": "^2.1.1"
+  }
+}
